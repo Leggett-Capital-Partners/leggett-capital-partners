@@ -145,7 +145,9 @@
       photo: 'assets/team/hiba.jpg',
       colleges: [{ name: 'University of Illinois', logo: 'assets/colleges/illinois.png' }],
       bio: [
-        `Hiba Alkhuzaie is an Operations Coordinator at Leggett Capital Partners, where she supports the firm's day-to-day operations across its portfolio companies and investments. She helps keep projects, reporting, and internal workflows running smoothly so the team can stay focused on serving investors and executing on new opportunities. Hiba is a graduate of the University of Illinois.`,
+        `Hiba Alkhuzaie is an Operations Coordinator at Leggett Capital Partners, where she supports the firm's day-to-day operations across its portfolio companies and investments, helping manage internal and external vendors and partners. Her work keeps processes and projects running smoothly, so the team can stay focused on pursuing and managing the investment portfolio.`,
+        `Prior to joining Leggett Capital Partners, Hiba spent eight years as a Senior Administrative Officer with Amentum, supporting defense operations abroad, where she led teams and managed projects in a fast-paced, high-stakes environment. That experience shaped her strong organizational skills and ability to manage complex operations under pressure.`,
+        `Hiba holds a bachelor's degree in engineering from her home country and an MBA from the University of Illinois Gies College of Business.`,
       ],
     },
     seslee: {
