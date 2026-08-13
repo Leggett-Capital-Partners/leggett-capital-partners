@@ -129,7 +129,7 @@
     },
     andrew: {
       name: 'Andrew Herrick', title: 'Senior Accountant', company: 'Leggett Capital Partners',
-      photo: 'assets/team/placeholder.png',
+      photo: 'assets/team/andrew.jpg',
       colleges: [
         { name: 'University of Houston', logo: 'assets/colleges/houston.png' },
         { name: 'United States Marine Corps', logo: 'assets/badges/marine-corps.png' },
@@ -155,7 +155,7 @@
       photo: 'assets/team/seslee.jpg',
       colleges: [{ name: 'Texas A&M University', logo: 'assets/colleges/texas-am.png' }],
       bio: [
-        `Seslee is a Senior Accountant at Leggett Capital Partners, where she leads the accounting and financial management of the firm's Starlight Campground and NewFound Partners divisions. In her role, she oversees the accounting function across multiple operating verticals, helping ensure the accuracy and integrity of financial reporting while delivering the timely and reliable information executive leadership needs to make informed business and investment decisions. She is dedicated to strengthening the firm's accounting operations through continuous process improvement, enhanced workflows, and scalable systems that empower the accounting team and support the firm's continued growth.`,
+        `Seslee is a Senior Accountant at Leggett Capital Partners, where she leads the accounting and financial management of the firm's Starlight Campground and NewFound Partners divisions, as well as Frontier and the firm's broader Title vertical. She also partners with the team on accounting for select companies within the firm's Opportunities Group. In her role, she oversees the accounting function across multiple operating verticals, helping ensure the accuracy and integrity of financial reporting while delivering the timely and reliable information executive leadership needs to make informed business and investment decisions. She is dedicated to strengthening the firm's accounting operations through continuous process improvement, enhanced workflows, and scalable systems that empower the accounting team and support the firm's continued growth.`,
         `With more than 13 years of accounting experience, Seslee has worked alongside controllers, CFOs, finance directors, and executive leadership, gaining valuable hands-on experience that has shaped her collaborative approach to solving complex accounting challenges and driving organizational success.`,
         `Seslee graduated from Texas A&M University in 2011 with a BA in Agricultural Economics with an emphasis in Finance and Real Estate.`,
       ],
