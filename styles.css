@@ -295,7 +295,7 @@ a{color:inherit;text-decoration:none}
 .team-grid--lead{grid-template-columns:repeat(4,1fr)}
 .team-grid--ops{grid-template-columns:repeat(4,1fr)}
 .team-grid--ops .member:first-child{grid-column-start:2}
-.team-grid--corp{grid-template-columns:repeat(3,calc((100% - 72px)/4));justify-content:center}
+.team-grid--corp{grid-template-columns:repeat(4,1fr)}
 .member--static{cursor:default}
 .member--static:focus-visible{outline:none}
 .advisory{margin-top:58px;padding-top:42px;border-top:1px solid var(--line-dark);text-align:center}
