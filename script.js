@@ -160,6 +160,15 @@
         `Seslee graduated from Texas A&M University in 2011 with a BA in Agricultural Economics with an emphasis in Finance and Real Estate.`,
       ],
     },
+    jackson: {
+      name: 'Jackson Darr', title: 'Analyst', company: 'Leggett Capital Partners',
+      photo: 'assets/team/jackson.jpg',
+      colleges: [{ name: 'Rice University', logo: 'assets/colleges/rice.png' }],
+      bio: [
+        `Jackson Darr is an Analyst at Leggett Capital Partners, where he supports the firm's investment and operations teams across its real estate, oil & gas and opportunities portfolios. He assists with financial analysis, research and reporting, and builds internal tools that help the team operate more efficiently.`,
+        `Jackson is an undergraduate at Rice University, where he is pursuing a degree in Business with a concentration in Finance and a minor in Entrepreneurship.`,
+      ],
+    },
   };
 
   // Merge CMS-edited titles/bios (from content/site.json) over the defaults above.

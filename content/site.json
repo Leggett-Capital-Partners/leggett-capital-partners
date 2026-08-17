@@ -158,6 +158,15 @@
         "With more than 13 years of accounting experience, Seslee has worked alongside controllers, CFOs, finance directors, and executive leadership, gaining valuable hands-on experience that has shaped her collaborative approach to solving complex accounting challenges and driving organizational success.",
         "Seslee graduated from Texas A&M University in 2011 with a BA in Agricultural Economics with an emphasis in Finance and Real Estate."
       ]
+    },
+    "jackson": {
+      "role": "Analyst", "company": "Leggett Capital Partners", "extra": "",
+      "modalTitle": "Analyst",
+      "photo": "assets/team/jackson.jpg",
+      "bio": [
+        "Jackson Darr is an Analyst at Leggett Capital Partners, where he supports the firm's investment and operations teams across its real estate, oil & gas and opportunities portfolios. He assists with financial analysis, research and reporting, and builds internal tools that help the team operate more efficiently.",
+        "Jackson is an undergraduate at Rice University, where he is pursuing a degree in Business with a concentration in Finance and a minor in Entrepreneurship."
+      ]
     }
   }
 }
