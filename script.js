@@ -124,7 +124,8 @@
       photo: 'assets/team/eric.jpg',
       colleges: [{ name: 'University of North Carolina at Chapel Hill', logo: 'assets/colleges/unc.png' }],
       bio: [
-        `Eric Kline is a Managing Principal of Starlight Campgrounds, the firm's recreational-RV platform, a growing network of premium outdoor RV destinations across the Midwest.`,
+        `Eric Kline is a Managing Principal of Starlight Campgrounds, the firm's recreational-RV platform, a growing network of premium outdoor RV destinations across the Midwest. He has a background in raising capital for multifamily acquisitions, ground-up development, and refinancing.`,
+        `Eric previously worked at PinPoint Commercial where he supported the capitalization and development of its seniors' multifamily projects. Prior to that, he worked at Berkadia facilitating the firm's capital brokerage activities; marketing and closing $300 million in Fannie Mae, Freddie Mac, bank and preferred equity financings across acquisition and development situations. Eric received his B.S. in Business Administration from the University of North Carolina at Chapel Hill.`,
       ],
     },
     andrew: {
