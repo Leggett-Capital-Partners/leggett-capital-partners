@@ -7,14 +7,53 @@
     return String(s == null ? '' : s)
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
+
+  // CMS editors can type arbitrary text into fields that render as HTML
+  // (for things like <b>, &middot; and the "led by" link). Strip anything
+  // outside a small safe allowlist so a bad paste can't inject a script,
+  // an event-handler attribute, or a javascript: link.
+  var SAFE_TAGS = { B: 1, STRONG: 1, EM: 1, I: 1, BR: 1, SPAN: 1, A: 1 };
+  function sanitizeHTML(input) {
+    if (input == null) return '';
+    var doc = new DOMParser().parseFromString('<div>' + String(input) + '</div>', 'text/html');
+    var root = doc.body.firstChild;
+    if (!root) return '';
+    (function clean(node) {
+      [].slice.call(node.childNodes).forEach(function (child) {
+        if (child.nodeType === 8) { node.removeChild(child); return; } // comments
+        if (child.nodeType !== 1) return; // keep text nodes as-is
+        var tag = child.tagName;
+        if (!SAFE_TAGS[tag]) {
+          while (child.firstChild) node.insertBefore(child.firstChild, child);
+          node.removeChild(child);
+          return;
+        }
+        var href = tag === 'A' ? child.getAttribute('href') : null;
+        [].slice.call(child.attributes).forEach(function (attr) { child.removeAttribute(attr.name); });
+        if (tag === 'A') {
+          if (href && /^(#|mailto:|https?:)/i.test(href)) {
+            child.setAttribute('href', href);
+            if (/^https?:/i.test(href)) { child.setAttribute('target', '_blank'); child.setAttribute('rel', 'noopener'); }
+          } else {
+            while (child.firstChild) node.insertBefore(child.firstChild, child);
+            node.removeChild(child);
+            return;
+          }
+        }
+        clean(child);
+      });
+    })(root);
+    return root.innerHTML;
+  }
+
   function set(sel, val, html) {
     var el = document.querySelector(sel);
     if (!el || val == null) return;
-    if (html) el.innerHTML = val; else el.textContent = val;
+    if (html) el.innerHTML = sanitizeHTML(val); else el.textContent = val;
   }
   function fill(el, val, html) {
     if (!el || val == null) return;
-    if (html) el.innerHTML = val; else el.textContent = val;
+    if (html) el.innerHTML = sanitizeHTML(val); else el.textContent = val;
   }
 
   fetch('content/site.json?cb=' + Date.now())
@@ -89,10 +128,10 @@
         });
         set('#portfolio [data-panel="re"] .pf__intro p', P.re_intro, true);
         var reSmalls = document.querySelectorAll('#portfolio [data-panel="re"] .pf__logos .pf__logo small');
-        (P.re_labels || []).forEach(function (t, i) { if (reSmalls[i]) reSmalls[i].innerHTML = t; });
+        (P.re_labels || []).forEach(function (t, i) { if (reSmalls[i]) reSmalls[i].innerHTML = sanitizeHTML(t); });
         set('#portfolio [data-panel="strat"] .pf__intro p', P.opp_intro, true);
         var oppSmalls = document.querySelectorAll('#portfolio [data-panel="strat"] .pf__logos .pf__logo small');
-        (P.opp_labels || []).forEach(function (t, i) { if (oppSmalls[i]) oppSmalls[i].innerHTML = t; });
+        (P.opp_labels || []).forEach(function (t, i) { if (oppSmalls[i]) oppSmalls[i].innerHTML = sanitizeHTML(t); });
       }
 
       // Story / Timeline
@@ -113,7 +152,7 @@
       // Contact
       if (S.contact) {
         var blocks = document.querySelectorAll('.contact__right .contact__block');
-        if (blocks[0] && S.contact.office != null) { var op = blocks[0].querySelector('p'); if (op) op.innerHTML = S.contact.office; }
+        if (blocks[0] && S.contact.office != null) { var op = blocks[0].querySelector('p'); if (op) op.innerHTML = sanitizeHTML(S.contact.office); }
         if (S.contact.email != null) {
           var a = document.querySelector('.contact__right .contact__block a[href^="mailto:"]');
           if (a) { a.textContent = S.contact.email; a.setAttribute('href', 'mailto:' + S.contact.email); }

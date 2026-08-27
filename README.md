@@ -1,32 +1,39 @@
 # Leggett Capital Partners — Website
 
-Redesigned marketing site for Leggett Capital Partners. Pure static HTML/CSS/JS — no build step, no dependencies.
+Marketing site for Leggett Capital Partners. Pure static HTML/CSS/JS, no build step, no dependencies.
 
 ## Structure
 ```
 index.html      # all page content / sections
-styles.css      # brand system (navy #13294B + copper #C77E23, Barlow Condensed / Inter)
-script.js       # sticky nav, mobile menu, count-up stats, scroll reveal
-assets/         # logo + Houston skyline hero (sourced from the investor deck)
+styles.css      # brand system (navy #13294B, teal accent), Barlow Condensed / Inter / Cinzel
+script.js       # sticky nav, mobile menu, count-up stats, scroll reveal, team bio modal
+cms-render.js   # fetches content/site.json and fills the page from it (HTML stays as fallback)
+content/site.json  # editable content: hero, stats, approach, portfolio, story, contact, footer, team
+.pages.yml      # Pages CMS field config
+assets/         # logos, hero image, team headshots, portfolio-company logos
+robots.txt / sitemap.xml  # basic SEO plumbing
 ```
+
+## Hosting
+
+Hosted on **GitHub Pages**, which redeploys automatically on every push to `main`.
+Live site: https://leggett-capital-partners.github.io/leggett-capital-partners/
 
 ## Preview locally
 ```
-cd leggett-website
 python3 -m http.server 4321
 # open http://localhost:4321
 ```
 
-## Deploy (static — pick one)
-- **Netlify Drop** (easiest): go to https://app.netlify.com/drop and drag this whole folder in. Live in ~30s. Then point the `leggettventures.com` DNS at it.
-- **Vercel**: `npx vercel` from this folder, or connect a Git repo.
-- **Cloudflare Pages**: create a project, upload the folder or connect Git. Framework preset = "None".
-- **Any host**: upload the folder contents to the web root. No server-side code required.
+## Editing content
 
-## Notes
-- Fonts load from Google Fonts (Barlow Condensed + Inter) via CDN.
-- "Investor Login" points to the Juniper Square portal: https://app.junipersquare.com/i/leggettventures
-- Content mirrors the polished "New Deck" (stats: $350M+ AUM, 285 investors / 30 states, 19 managed investments, 19 yrs avg. experience).
-- Performance / track-record figures are intentionally NOT on the public site.
-- `assets/team/` — leadership headshots (mapped from the deck: Earl Correll confirmed via "EEC" belt buckle).
-- `assets/logos/` — 11 portfolio-company logos (Cannon Field, On Point, NewFound, Frontier Title, Starlight, Waterloo, Logos, Salterra, Stonepeak, Aurora, Aviation). EPS Learning has no image logo in the decks, so it renders as a styled text chip in the "Our companies & partners" section.
+Two ways to edit:
+- **Non-coders**: Pages CMS at https://app.pagescms.org (sign in with GitHub, open this project). Edits commit straight to `main` and redeploy like any other change.
+- **Code changes**: edit the files directly and push. Team member titles/bios/photos live in *two* places that must stay in sync — `content/site.json` under `team.<person>` (what the CMS edits) and the `MEMBERS` object in `script.js` (the baked-in fallback used if the JSON fails to load).
+
+Because the CMS commits directly to `main`, always `git pull` before editing locally so you don't clobber someone else's CMS edit.
+
+## Conventions
+- Cache-busting: `index.html` links `styles.css`/`script.js`/`cms-render.js` with a `?v=YYYYMMDD` version. Bump it whenever you change CSS or JS so browsers pick up the new version.
+- No em dashes in site copy — use commas, colons, or periods.
+- Team photos: `assets/team/<person>.jpg`, portrait roughly 2:3, optimized to about 800x1200.

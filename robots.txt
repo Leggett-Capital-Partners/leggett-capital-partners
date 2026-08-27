@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leggett-capital-partners.github.io/leggett-capital-partners/sitemap.xml
