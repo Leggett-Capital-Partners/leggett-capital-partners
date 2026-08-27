@@ -163,7 +163,7 @@
     },
     jackson: {
       name: 'Jackson Darr', title: 'Analyst', company: 'Leggett Capital Partners',
-      photo: 'assets/team/jackson.jpg',
+      photo: 'assets/team/jackson.jpg?v=20260827c',
       colleges: [{ name: 'Rice University', logo: 'assets/colleges/rice.png' }],
       bio: [
         `Jackson Darr is an Analyst at Leggett Capital Partners, where he supports the firm's investment and operations teams across its real estate, oil & gas and opportunities portfolios. He assists with financial analysis, research and reporting, and builds internal tools that help the team operate more efficiently.`,
