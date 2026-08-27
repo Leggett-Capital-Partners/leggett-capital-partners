@@ -338,10 +338,10 @@
       'Message:',
       (val('message') || '—'),
     ].join('\r\n');
-    const href = 'mailto:investors@leggettventures.com'
+    const href = 'mailto:investors@leggettcp.com'
       + '?subject=' + encodeURIComponent('Investor inquiry — ' + name)
       + '&body=' + encodeURIComponent(body);
     window.location.href = href;
-    say('Thanks, ' + name.split(' ')[0] + ' — your email is ready to send in your mail app. If it didn’t open, email investors@leggettventures.com directly.', false);
+    say('Thanks, ' + name.split(' ')[0] + ' — your email is ready to send in your mail app. If it didn’t open, email investors@leggettcp.com directly.', false);
   });
 })();
