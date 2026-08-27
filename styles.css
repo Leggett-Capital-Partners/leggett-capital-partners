@@ -567,7 +567,7 @@ a{color:inherit;text-decoration:none}
   .tl__row{flex-direction:column;gap:20px}
   .tl__row::before{left:39px;right:auto;top:0;bottom:0;width:3px;height:auto;
     background:linear-gradient(180deg,var(--teal) 0%,var(--teal) 24%,var(--tlblue) 33%,var(--tlblue) 100%)}
-  .tl__node{flex-direction:row;align-items:center;text-align:left;gap:20px}
+  .tl__link{flex-direction:row;align-items:center;text-align:left;gap:20px}
   .tl__badge{width:78px;height:78px}
   .tl__text{align-items:flex-start}
   .tl__year{margin-top:0;font-size:1.55rem}
