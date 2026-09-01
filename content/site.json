@@ -29,7 +29,7 @@
   "portfolio": {
     "section_title": "One platform, invested across three groups.",
     "section_lead": "Everything Leggett Capital Partners owns and invests in. Choose a group to see the investments behind it.",
-    "oil_intro": "Our oil &amp; gas group is managed by <b>Cannon Field</b>, our in-house oil &amp; gas company. Since its inception in 2017, Cannon Field has closed over 250 transactions across multiple mineral and royalty funds and non-operated assets concentrated in Oklahoma, Texas, New Mexico and Wyoming.",
+    "oil_intro": "Our oil &amp; gas group is managed by <a href=\"https://cannonfield.com\">Cannon Field</a>, our in-house oil &amp; gas company. Since its inception in 2017, Cannon Field has closed over 250 transactions across multiple mineral and royalty funds and non-operated assets concentrated in Oklahoma, Texas, New Mexico and Wyoming.",
     "oil_stats": [
       { "num": "44,000+", "label": "Net royalty acres" },
       { "num": "8,900+", "label": "Producing wells" },

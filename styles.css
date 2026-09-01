@@ -482,8 +482,8 @@ a{color:inherit;text-decoration:none}
 }
 
 /* ---- portfolio: bio lead links, operating-roots, fund cards ---- */
-.pf__lead{color:var(--copper-light);font-weight:600;border-bottom:1px solid rgba(112,169,161,.5);transition:color .2s,border-color .2s}
-.pf__lead:hover{color:#fff;border-color:#fff}
+.pf__intro p a,.pf__lead{color:var(--copper-light);font-weight:600;border-bottom:1px solid rgba(112,169,161,.5);transition:color .2s,border-color .2s}
+.pf__intro p a:hover,.pf__lead:hover{color:#fff;border-color:#fff}
 .pf__holdings--roots .pf__holdings-label{color:var(--teal)}
 .pf__holdings--roots .pf__logo-chip{box-shadow:0 0 0 1px rgba(112,169,161,.5)}
 .pf__funds{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
