@@ -5,7 +5,7 @@
     "tagline": "Private Equity &nbsp;&middot;&nbsp; Houston, Texas &nbsp;&middot;&nbsp; Est. 2016"
   },
   "stats": [
-    { "count": 400, "prefix": "$", "suffix": "M+", "label": "Assets Under Management (as of 3/31/26)" },
+    { "count": 400, "prefix": "$", "suffix": "M+", "label": "Assets Under Management (as of most recent quarter-end)" },
     { "count": 436, "prefix": "", "suffix": "", "label": "Investors across 31 states" },
     { "count": 20, "prefix": "", "suffix": "", "label": "Managed investments" }
   ],
