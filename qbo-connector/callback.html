@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Authorization received, Leggett QBO Connector</title>
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="stylesheet" href="qbo.css">
+</head>
+<body>
+<!--
+  Production OAuth redirect page. Register this page's exact https address as a
+  Production redirect URI on the Intuit app. The page sends nothing anywhere and
+  loads no third-party resources: it only shows its own address so the person can
+  paste it into `qbo-connect`. The one-time code expires within minutes and is
+  useless without the app's client secret, which never leaves the connector machine.
+-->
+<header><div class="wrap"><img src="../assets/logo-white.svg" alt="Leggett Capital Partners"></div></header>
+<main><div class="wrap">
+  <h1>Authorization received</h1>
+  <p class="lede">Copy the full address below and paste it into the qbo-connect window that is waiting for it.</p>
+  <code class="addr" id="addr"></code>
+  <p>Then close this tab.</p>
+</div></main>
+<script>document.getElementById('addr').textContent = window.location.href;</script>
+</body>
+</html>
