@@ -36,7 +36,7 @@
       { "num": "250+", "label": "Transactions closed" }
     ],
     "oil_funds": [
-      { "desc": "The inaugural fund, focused on minerals and royalties across Oklahoma, Texas and New Mexico.", "status": "Realized · Exited 2024" },
+      { "desc": "The inaugural fund, focused on minerals and royalties across Oklahoma, Texas and New Mexico.", "status": "Exited - 2024" },
       { "desc": "Focused on minerals across Oklahoma, Texas and New Mexico.", "status": "Active" },
       { "desc": "Focused on minerals across Oklahoma, Texas, New Mexico and Wyoming.", "status": "Active; Investing" }
     ],
@@ -45,7 +45,7 @@
     "opp_intro": "Led by Founder &amp; Managing Partner <a class=\"pf__lead\" href=\"#team\">John Leggett</a>, our Opportunities Group targets high-quality, cash-flowing assets with strong fundamentals and growth potential.",
     "opp_labels": [
       "Sparkling Water",
-      "Upstream Oil &amp; Gas &middot; San Juan Basin (Realized &middot; Exited 2026)",
+      "Upstream Oil &amp; Gas &middot; San Juan Basin (Exited - 2026)",
       "Industrial Private Equity &middot; GP Stake",
       "Infrastructure Private Equity &middot; GP Stake",
       "Education &middot; Literacy",
