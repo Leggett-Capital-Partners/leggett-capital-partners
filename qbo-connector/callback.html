@@ -12,18 +12,34 @@
 <body>
 <!--
   Production OAuth redirect page. Register this page's exact https address as a
-  Production redirect URI on the Intuit app. The page sends nothing anywhere and
-  loads no third-party resources: it only shows its own address so the person can
-  paste it into `qbo-connect`. The one-time code expires within minutes and is
-  useless without the app's client secret, which never leaves the connector machine.
+  Production redirect URI on the Intuit app.
+
+  It hands the result to the qbo-connect tool waiting on the SAME computer
+  (http://localhost:8000/callback). The browser goes there directly; nothing is sent
+  to any other server, and no third-party resources load. If qbo-connect is not
+  running, use the browser's Back button and copy the address shown below instead.
+  The one-time code expires within minutes and is useless without the app's
+  client secret, which never leaves the connector machine.
 -->
 <header><div class="wrap"><img src="../assets/logo-white.svg" alt="Leggett Capital Partners"></div></header>
 <main><div class="wrap">
   <h1>Authorization received</h1>
-  <p class="lede">Copy the full address below and paste it into the qbo-connect window that is waiting for it.</p>
+  <p class="lede" id="status">Handing this to qbo-connect on your computer...</p>
+  <div class="card">
+    <p>If your browser shows "can't reach this page", qbo-connect isn't waiting. Press <b>Back</b>,
+       copy the full address below, and paste it into qbo-connect.</p>
+  </div>
   <code class="addr" id="addr"></code>
-  <p>Then close this tab.</p>
 </div></main>
-<script>document.getElementById('addr').textContent = window.location.href;</script>
+<script>
+  document.getElementById('addr').textContent = window.location.href;
+  var q = new URLSearchParams(window.location.search);
+  if ((q.get('code') || q.get('error')) && q.get('state')) {
+    // Same computer only. location.href (not replace) so Back returns here if nothing is listening.
+    window.location.href = 'http://localhost:8000/callback' + window.location.search;
+  } else {
+    document.getElementById('status').textContent = 'This page only completes a QuickBooks sign-in started from qbo-connect.';
+  }
+</script>
 </body>
 </html>
