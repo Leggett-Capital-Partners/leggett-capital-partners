@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<title>Leggett QBO Connector Setup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Exo+2:wght@300;400;600&display=swap">
+<style>
+/* Layout: one calm reading column, a navy masthead, numbered setup steps, quiet reference sections below. */
+:root {
+  --navy: #13294B;          /* Deep Navy */
+  --sage: #70A9A1;          /* Sage accent, used once per view */
+  --sage-text: #2E6E64;     /* Sage for text on light grounds (AA) */
+  --bg: #F6F8FA;
+  --surface: #FFFFFF;
+  --ink: #1A2533;
+  --muted: #5A6573;
+  --line: #E2E6EC;
+  --code-bg: #EEF2F6;
+  --on-navy: #FFFFFF;
+  --on-navy-muted: rgba(255,255,255,.72);
+  --display: "Libre Baskerville", Georgia, "Times New Roman", serif;
+  --body: "Exo 2", "Segoe UI", system-ui, sans-serif;
+  --mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1A2C; --surface: #14243B; --ink: #E7ECF2; --muted: #A3AFBE; --line: #24364F;
+    --code-bg: #1B2E48; --sage-text: #93C7C0; --navy: #0A1626; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1A2C; --surface: #14243B; --ink: #E7ECF2; --muted: #A3AFBE; --line: #24364F;
+  --code-bg: #1B2E48; --sage-text: #93C7C0; --navy: #0A1626; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-weight: 300; font-size: 16px; line-height: 1.65; }
+.mast { background: var(--navy); color: var(--on-navy); padding-block: 48px 40px; padding-inline: 16px; }
+.wrap { max-width: 720px; margin: 0 auto; }
+main.wrap { padding-block: 40px 64px; padding-inline: 16px; display: grid; gap: 44px; }
+.eyebrow { font-weight: 600; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--on-navy-muted); }
+h1, h2 { font-family: var(--display); font-weight: 400; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.2; margin-top: 10px; }
+.lede { color: var(--on-navy-muted); max-width: 60ch; margin: 14px 0 0; font-size: 17px; }
+h2 { font-size: 22px; color: var(--ink); margin-bottom: 14px; }
+section > p { margin: 0 0 12px; max-width: 65ch; }
+.muted { color: var(--muted); }
+strong { font-weight: 600; }
+ol.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; counter-reset: s; }
+ol.steps li { counter-increment: s; display: grid; grid-template-columns: 36px 1fr; gap: 14px; align-items: start;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px 18px; }
+ol.steps li::before { content: counter(s); font-family: var(--display); font-size: 18px; width: 32px; height: 32px; border-radius: 50%;
+  display: grid; place-items: center; background: var(--sage); color: #0E2A26; }
+ol.steps li div { min-width: 0; }
+ol.steps b { display: block; font-weight: 600; margin-bottom: 2px; }
+.table-scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; padding: 9px 12px 9px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 600; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+td:first-child { white-space: nowrap; font-weight: 600; }
+.prompts { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.prompts li { display: flex; gap: 10px; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; }
+.prompts span { min-width: 0; flex: 1 1 260px; }
+button.copy { font: 600 12px var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--sage-text);
+  background: transparent; border: 1px solid var(--line); border-radius: 4px; padding: 6px 10px; cursor: pointer; }
+button.copy:hover { border-color: var(--sage-text); }
+button.copy:focus-visible { outline: 2px solid var(--sage-text); outline-offset: 2px; }
+code, .url { font-family: var(--mono); font-size: 13.5px; background: var(--code-bg); border-radius: 4px; padding: 2px 6px; overflow-wrap: anywhere; }
+.url-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
+.url-row .url { flex: 1 1 300px; min-width: 0; padding: 8px 10px; }
+ul.plain { margin: 0; padding-left: 20px; display: grid; gap: 6px; max-width: 65ch; }
+dl { margin: 0; display: grid; gap: 14px; }
+dt { font-weight: 600; }
+dd { margin: 2px 0 0; color: var(--muted); max-width: 65ch; }
+footer { border-top: 1px solid var(--line); padding-top: 20px; font-size: 14px; color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+<style>html,body{margin:0}</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="eyebrow">Leggett Capital Partners · Internal</div>
+    <h1>QuickBooks in Claude</h1>
+    <p class="lede">Ask Claude for reports and checks across all 77 of our QuickBooks companies, without logging in to QuickBooks. Setup takes about two minutes.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Before you start</h2>
+    <p>You need a seat on the Leggett Claude Team plan and a role on the connector. Jackson assigns roles. If you are not sure you have one, ask him before connecting.</p>
+    <div class="table-scroll">
+      <table>
+        <tr><th>Role</th><th>What it allows</th></tr>
+        <tr><td>Reader</td><td>All reports and checks</td></tr>
+        <tr><td>Drafter</td><td>Reader, plus drafting journal entries for review (drafts only)</td></tr>
+        <tr><td>Admin</td><td>Drafter, plus connecting new QuickBooks companies</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Connect, one time</h2>
+    <ol class="steps">
+      <li><div><b>Open your connectors</b>In Claude (web or desktop), go to <strong>Customize</strong>, then <strong>Connectors</strong>.</div></li>
+      <li><div><b>Find Leggett QBO and click Connect</b>It is already listed for everyone in the Leggett workspace. You do not need a link or a QuickBooks login.</div></li>
+      <li><div><b>Sign in with Microsoft</b>Use your @leggettcp.com account. You land back in Claude when it is done.</div></li>
+      <li><div><b>Check it works</b>Start a new chat and ask: <em>List my QuickBooks entities.</em></div></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Things to ask</h2>
+    <ul class="prompts">
+      <li><span>Balance sheet for Cannon Field LLC as of 9/30/2026</span><button class="copy" type="button">Copy</button></li>
+      <li><span>P&amp;L for all our companies for Q3 2026, side by side</span><button class="copy" type="button">Copy</button></li>
+      <li><span>Which companies still have open bank recs for September?</span><button class="copy" type="button">Copy</button></li>
+      <li><span>Run the intercompany tie-out as of 9/30/2026 and list what does not tie</span><button class="copy" type="button">Copy</button></li>
+      <li><span>Scan all companies for uncategorized and suspense balances</span><button class="copy" type="button">Copy</button></li>
+      <li><span>Compare Q3 to Q2 for Cannon Field LLC and flag big changes</span><button class="copy" type="button">Copy</button></li>
+    </ul>
+    <p class="muted" style="margin-top:12px">Large results come back as a CSV download link. Links expire after 30 minutes, so download them when you need them.</p>
+  </section>
+
+  <section>
+    <h2>Ground rules</h2>
+    <ul class="plain">
+      <li>The connector reads QuickBooks. It never changes it on its own.</li>
+      <li>Journal entries are drafts with a preview. Nothing is posted without a person approving that preview, and posting to our live companies is switched off.</li>
+      <li>Every request is logged with your name.</li>
+      <li>Keep results inside Leggett. Do not paste financial data into tools or chats outside our Microsoft 365 and Claude workspace.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>If something goes wrong</h2>
+    <dl>
+      <dt>"You do not have the role" or access denied</dt>
+      <dd>Your role is missing or was just added. Ask Jackson to check, then disconnect and reconnect.</dd>
+      <dt>"Authorization lapsed" for a company</dt>
+      <dd>That one company needs a QuickBooks admin to reconnect it. Tell Jackson which company.</dd>
+      <dt>Leggett QBO is not in your connectors list</dt>
+      <dd>Your Claude account may not be in the Leggett workspace. Ask Jackson.</dd>
+      <dt>A company is missing</dt>
+      <dd>An Admin can add it in a few minutes. Send Jackson the company name.</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>For Claude Code or other apps</h2>
+    <p>Only needed outside the Leggett Claude workspace. Add a remote MCP server with this address and sign in with your @leggettcp.com account.</p>
+    <div class="url-row">
+      <span class="url" id="mcp-url">https://leggettqbo-app.nicerock-256f6232.southcentralus.azurecontainerapps.io/mcp</span>
+      <button class="copy" type="button" data-target="mcp-url">Copy</button>
+    </div>
+  </section>
+
+  <footer>Questions: Jackson Darr, <span class="sel">jackson@leggettcp.com</span></footer>
+</main>
+
+<script>
+document.querySelectorAll("button.copy").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    var src = btn.dataset.target ? document.getElementById(btn.dataset.target) : btn.previousElementSibling;
+    var text = src.textContent.trim();
+    var done = function () { btn.textContent = "Copied"; setTimeout(function () { btn.textContent = "Copy"; }, 1500); };
+    var fallback = function () {
+      var r = document.createRange(); r.selectNodeContents(src);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      btn.textContent = "Selected";
+      setTimeout(function () { btn.textContent = "Copy"; }, 1500);
+    };
+    try { navigator.clipboard.writeText(text).then(done, fallback); } catch (e) { fallback(); }
+  });
+});
+</script>
+
+</body>
+</html>
