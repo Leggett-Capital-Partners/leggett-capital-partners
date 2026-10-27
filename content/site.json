@@ -30,9 +30,7 @@
     "section_title": "One platform, invested across three groups.",
     "section_lead": "Everything Leggett Capital Partners owns and invests in. Choose a group to see the investments behind it.",
     "oil_intro": "Our oil &amp; gas group is managed by <a href=\"https://cannonfield.com\">Cannon Field</a>, our in-house oil &amp; gas company. Cannon Field manages over 100,000 net royalty acres across its affiliated entities.",
-    "oil_stats": [
-      { "num": "100,000+", "label": "Net royalty acres" }
-    ],
+    "oil_stats": [],
     "oil_funds": [
       { "desc": "The inaugural fund, focused on minerals and royalties across Oklahoma, Texas and New Mexico.", "status": "Exited - 2024" },
       { "desc": "Focused on minerals across Oklahoma, Texas and New Mexico.", "status": "Active" },
