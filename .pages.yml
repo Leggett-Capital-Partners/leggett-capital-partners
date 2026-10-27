@@ -168,8 +168,8 @@ content:
               - { name: extra, label: "Third line (optional)", type: string }
               - { name: modalTitle, label: "Full title (bio popup)", type: string }
               - { name: bio, label: "Bio (one box per paragraph)", type: text, list: true }
-          - name: hiba
-            label: Hiba Alkhuzaie
+          - name: jake
+            label: Jake Pincus
             type: object
             fields:
               - { name: photo, label: Photo, type: image }
