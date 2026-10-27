@@ -75,6 +75,7 @@
       "role": "Founder & Managing Partner", "company": "Leggett Capital Partners", "extra": "",
       "modalTitle": "Founder & Managing Partner",
       "photo": "assets/team/john.jpg",
+      "thumb": "assets/team/john-thumb.jpg",
       "bio": [
         "Founder and Managing Partner of Houston-based private equity firm Leggett Capital Partners, John Leggett is an avid entrepreneur and investor with an extensive portfolio spanning real estate, energy and alternatives. John is the co-founder of multiple portfolio companies including oil & gas investment firm Cannon Field, commercial real estate firm NewFound Partners, nationally recognized building firm On Point Custom Homes, and Frontier Title, which operates 17 locations across Texas, Florida, North Carolina, Utah and Tennessee.",
         "John started his career in investment banking as an analyst with Deutsche Bank and then in equity research with Credit Lyonnais, both covering the oil & gas industry. His passion for real estate turned into a full-time job when he launched On Point Custom Homes and left investment banking in 2004. From there, John's investment endeavors continued to expand, venturing into title, oil & gas, renewables and commercial real estate across the United States.",
@@ -85,6 +86,7 @@
       "role": "Partner, COO & CCO", "company": "Leggett Capital Partners", "extra": "",
       "modalTitle": "Partner, Chief Operating Officer & Chief Compliance Officer",
       "photo": "assets/team/ashley.jpg",
+      "thumb": "assets/team/ashley-thumb.jpg",
       "bio": [
         "Ashley is a Partner and the Chief Operating Officer at Leggett Capital Partners, supporting operational success across all LV portfolio companies and investments. With an extensive background in project management and communication, she works closely with internal and external parties to ensure our projects are completed efficiently and with high-quality outcomes.",
         "She serves as the primary contact for investor communications and manages all investor onboarding and reporting via the Leggett Capital Partners investor portal. With a passion for organization and results, she manages the team and daily workflow aiming to ensure our investment goals are met through strategic, integrated operations. Ashley is a Houston native who graduated from the University of South Carolina with a BA in Public Relations and Business."
@@ -94,6 +96,7 @@
       "role": "Partner", "company": "Leggett Capital Partners", "extra": "CEO of Cannon Field",
       "modalTitle": "Partner & CEO, Cannon Field",
       "photo": "assets/team/brian.jpg",
+      "thumb": "assets/team/brian-thumb.jpg",
       "bio": [
         "Brian serves as a Partner and CEO of the Oil & Gas and Minerals Investment Group within Leggett Capital Partners, managing a diverse portfolio spanning oil & gas, from upstream, downstream and petrochemical to mineral projects. After more than ten years at ExxonMobil, one of the world's largest oil & gas companies, Brian brought his diversified experience across upstream, downstream and petrochemicals to lead the expansion of mineral investment opportunities at Leggett Capital Partners.",
         "He is instrumental in project management, negotiation, operations, and financial & data analysis. Brian's extensive industry experience, paired with his enthusiasm for big-data analysis and financial modeling, gives him a unique perspective for potentially creating low-risk, high-return mineral opportunities for our investors. Brian earned a degree in Chemical Engineering from Virginia Tech."
@@ -103,6 +106,7 @@
       "role": "Partner", "company": "Leggett Capital Partners", "extra": "",
       "modalTitle": "Partner, Leggett Capital Partners",
       "photo": "assets/team/earl.jpg",
+      "thumb": "assets/team/earl-thumb.jpg",
       "bio": [
         "Earl has worked alongside John for over twenty years and serves as Partner and CEO of On Point Custom Homes as part of Leggett Capital Partners. He plays a critical role in all investment projects, particularly managing projects through every phase of the development cycle: feasibility, design, pre-construction and construction.",
         "As CEO and President of On Point Custom Homes, a nationally and locally recognized custom homebuilding firm, Earl started his career in residential real estate as a project manager and now holds Graduate Master Builder and Certified Green Professional designations from the National Association of Home Builders. He serves as President of the Briargrove Homeowners Association."
@@ -112,6 +116,7 @@
       "role": "Managing Principal", "company": "NewFound Partners", "extra": "",
       "modalTitle": "Managing Principal, NewFound Partners",
       "photo": "assets/team/brad.jpg",
+      "thumb": "assets/team/brad-thumb.jpg",
       "bio": [
         "Brad serves as Managing Principal and Head of the Commercial Real Estate Investment Group within Leggett Capital Partners, overseeing all commercial assets, land acquisitions, new-market opportunities and investment strategies. He brings more than 15 years of experience across a broad spectrum of commercial real estate asset classes to the team.",
         "Prior to joining NewFound Partners to focus on principal-side investments, Brad worked at NewQuest Properties and HFF LP, where he closed over 300 real estate transactions with an aggregate value of more than $3 billion. He serves on the boards of the Houston Racquet Club and Harris County Improvement District 14. Brad received a BA in Economics from the University of Tennessee and an MBA from Rice University, where he served as President of his class."
@@ -121,6 +126,7 @@
       "role": "Managing Principal", "company": "Starlight Campgrounds", "extra": "",
       "modalTitle": "Managing Principal, Starlight Campgrounds",
       "photo": "assets/team/eric.jpg",
+      "thumb": "assets/team/eric-thumb.jpg",
       "bio": [
         "Eric Kline is a Managing Principal of Starlight Campgrounds, the firm's recreational-RV platform, a growing network of premium outdoor RV destinations across the Midwest. He has a background in raising capital for multifamily acquisitions, ground-up development, and refinancing.",
         "Eric previously worked at PinPoint Commercial where he supported the capitalization and development of its seniors' multifamily projects. Prior to that, he worked at Berkadia facilitating the firm's capital brokerage activities; marketing and closing $300 million in Fannie Mae, Freddie Mac, bank and preferred equity financings across acquisition and development situations. Eric received his B.S. in Business Administration from the University of North Carolina at Chapel Hill."
@@ -130,6 +136,7 @@
       "role": "Senior Accountant", "company": "Leggett Capital Partners", "extra": "",
       "modalTitle": "Senior Accountant",
       "photo": "assets/team/andrew.jpg",
+      "thumb": "assets/team/andrew-thumb.jpg",
       "bio": [
         "Andrew Herrick is a Senior Accountant at Leggett Capital Partners, where he manages the accounting and financial analysis for various partnerships in our Oil & Gas and Opportunities Groups. In this role, he oversees financial reporting, budgeting, operational analysis, and accounting processes that support strategic decision-making and long-term growth.",
         "Prior to joining Leggett Capital Partners, Andrew worked in public accounting at Reimer McGuinness Hess, where he provided accounting, tax, and advisory services to a diverse portfolio of businesses, developing expertise in financial reporting, tax compliance, and client consulting. He also served as a Senior Accountant with Safety Vision, further expanding his experience in corporate accounting, financial statement preparation, and multi-state tax reporting.",
@@ -140,6 +147,7 @@
       "role": "Vice President", "company": "Leggett Capital Partners", "extra": "",
       "modalTitle": "Vice President",
       "photo": "assets/team/jake.jpg",
+      "thumb": "assets/team/jake-thumb.jpg",
       "bio": [
         "Jake Pincus is a Vice President at Leggett Capital Partners, where he focuses on sourcing and executing investments across the firm's oil & gas, real estate, and opportunities portfolios.",
         "Prior to joining Leggett Capital Partners, Jake was an Associate at Pelican Energy Partners, where he focused on investments in nuclear and oilfield services companies. Previously, he was an Investment Banking Associate at Mizuho, focusing on power, utilities, and infrastructure, and worked in KPMG's transaction advisory and audit practices.",
@@ -150,6 +158,7 @@
       "role": "Senior Accountant", "company": "Leggett Capital Partners", "extra": "",
       "modalTitle": "Senior Accountant",
       "photo": "assets/team/seslee.jpg",
+      "thumb": "assets/team/seslee-thumb.jpg",
       "bio": [
         "Seslee is a Senior Accountant at Leggett Capital Partners, where she leads the accounting and financial management of Starlight Campgrounds, NewFound Partners and Title divisions, as well as being involved with the firm's Opportunities Group. In her role, she aims to ensure the accuracy and integrity of financial reporting while delivering the timely and reliable information executive leadership needs to make informed business and investment decisions. She is dedicated to strengthening the firm's accounting operations through continuous process improvement, enhanced workflows, and scalable systems that empower the accounting team and support the firm's continued growth.",
         "With more than 13 years of accounting experience, Seslee has worked alongside controllers, CFOs, finance directors, and executive leadership, gaining valuable hands-on experience that has shaped her collaborative approach to solving complex accounting challenges and driving organizational success.",
@@ -160,6 +169,7 @@
       "role": "Analyst", "company": "Leggett Capital Partners", "extra": "",
       "modalTitle": "Analyst",
       "photo": "assets/team/jackson.jpg?v=20261006a",
+      "thumb": "assets/team/jackson-thumb.jpg",
       "bio": [
         "Jackson Darr is an Analyst at Leggett Capital Partners, where he supports the firm's investment and operations teams across its oil & gas, real estate and opportunities portfolios. He assists with financial analysis, research and reporting, and builds internal tools that help the team operate more efficiently. Jackson also works across the firm to implement AI and technology solutions that enhance investment due diligence, reporting and portfolio operations.",
         "Jackson is an undergraduate at Rice University, where he is pursuing a degree in Business with a concentration in Finance and a minor in Entrepreneurship."

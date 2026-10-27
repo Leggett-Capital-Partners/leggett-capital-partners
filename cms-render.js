@@ -175,7 +175,8 @@
             p.innerHTML = html;
           }
           var img = card.querySelector('.member__photo img');
-          if (img && m.photo) img.setAttribute('src', m.photo);
+          var cardSrc = m.thumb || m.photo;
+          if (img && cardSrc) img.setAttribute('src', cardSrc);
         });
       }
 

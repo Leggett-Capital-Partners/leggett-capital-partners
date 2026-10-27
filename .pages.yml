@@ -103,6 +103,7 @@ content:
             type: object
             fields:
               - { name: photo, label: Photo, type: image }
+              - { name: thumb, label: "Card thumbnail (square)", type: image }
               - { name: role, label: "Role (card line 1)", type: string }
               - { name: company, label: "Company (card line 2)", type: string }
               - { name: extra, label: "Third line (optional)", type: string }
@@ -113,6 +114,7 @@ content:
             type: object
             fields:
               - { name: photo, label: Photo, type: image }
+              - { name: thumb, label: "Card thumbnail (square)", type: image }
               - { name: role, label: "Role (card line 1)", type: string }
               - { name: company, label: "Company (card line 2)", type: string }
               - { name: extra, label: "Third line (optional)", type: string }
@@ -123,6 +125,7 @@ content:
             type: object
             fields:
               - { name: photo, label: Photo, type: image }
+              - { name: thumb, label: "Card thumbnail (square)", type: image }
               - { name: role, label: "Role (card line 1)", type: string }
               - { name: company, label: "Company (card line 2)", type: string }
               - { name: extra, label: "Third line (optional)", type: string }
@@ -133,6 +136,7 @@ content:
             type: object
             fields:
               - { name: photo, label: Photo, type: image }
+              - { name: thumb, label: "Card thumbnail (square)", type: image }
               - { name: role, label: "Role (card line 1)", type: string }
               - { name: company, label: "Company (card line 2)", type: string }
               - { name: extra, label: "Third line (optional)", type: string }
@@ -143,6 +147,7 @@ content:
             type: object
             fields:
               - { name: photo, label: Photo, type: image }
+              - { name: thumb, label: "Card thumbnail (square)", type: image }
               - { name: role, label: "Role (card line 1)", type: string }
               - { name: company, label: "Company (card line 2)", type: string }
               - { name: extra, label: "Third line (optional)", type: string }
@@ -153,6 +158,7 @@ content:
             type: object
             fields:
               - { name: photo, label: Photo, type: image }
+              - { name: thumb, label: "Card thumbnail (square)", type: image }
               - { name: role, label: "Role (card line 1)", type: string }
               - { name: company, label: "Company (card line 2)", type: string }
               - { name: extra, label: "Third line (optional)", type: string }
@@ -163,6 +169,7 @@ content:
             type: object
             fields:
               - { name: photo, label: Photo, type: image }
+              - { name: thumb, label: "Card thumbnail (square)", type: image }
               - { name: role, label: "Role (card line 1)", type: string }
               - { name: company, label: "Company (card line 2)", type: string }
               - { name: extra, label: "Third line (optional)", type: string }
@@ -173,6 +180,7 @@ content:
             type: object
             fields:
               - { name: photo, label: Photo, type: image }
+              - { name: thumb, label: "Card thumbnail (square)", type: image }
               - { name: role, label: "Role (card line 1)", type: string }
               - { name: company, label: "Company (card line 2)", type: string }
               - { name: extra, label: "Third line (optional)", type: string }
@@ -183,6 +191,7 @@ content:
             type: object
             fields:
               - { name: photo, label: Photo, type: image }
+              - { name: thumb, label: "Card thumbnail (square)", type: image }
               - { name: role, label: "Role (card line 1)", type: string }
               - { name: company, label: "Company (card line 2)", type: string }
               - { name: extra, label: "Third line (optional)", type: string }
@@ -193,6 +202,7 @@ content:
             type: object
             fields:
               - { name: photo, label: Photo, type: image }
+              - { name: thumb, label: "Card thumbnail (square)", type: image }
               - { name: role, label: "Role (card line 1)", type: string }
               - { name: company, label: "Company (card line 2)", type: string }
               - { name: extra, label: "Third line (optional)", type: string }
