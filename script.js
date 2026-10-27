@@ -90,7 +90,7 @@
       ],
     },
     earl: {
-      name: 'Earl Correll', title: 'Partner & CEO, On Point Custom Homes', company: 'On Point Custom Homes',
+      name: 'Earl Correll', title: 'Partner, Leggett Capital Partners', company: 'Leggett Capital Partners',
       photo: 'assets/team/earl.jpg',
       colleges: [{ name: 'University of North Carolina at Chapel Hill', logo: 'assets/colleges/unc.png' }],
       bio: [
