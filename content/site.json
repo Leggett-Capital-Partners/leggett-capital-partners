@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Leggett Capital Partners",
-    "subhead": "A Houston based Private Equity Firm providing access to opportunistic investments in Real Estate, Oil & Gas and other alternative asset classes.",
+    "subhead": "A Houston-based Private Equity Firm providing access to opportunistic investments in Oil & Gas, Real Estate and other alternative asset classes.",
     "tagline": "Private Equity &nbsp;&middot;&nbsp; Houston, Texas &nbsp;&middot;&nbsp; Est. 2016"
   },
   "stats": [
@@ -11,7 +11,7 @@
   ],
   "approach": {
     "title": "A diversified platform, built on alignment.",
-    "lead": "Leggett Capital Partners provides access to opportunistic investments in real estate, oil&nbsp;&amp; gas and other alternative asset classes, built on directly-sourced deals that aim to deliver compelling, risk-adjusted returns.",
+    "lead": "Leggett Capital Partners provides access to opportunistic investments in oil&nbsp;&amp; gas, real estate and other alternative asset classes, built on directly-sourced deals that aim to deliver compelling, risk-adjusted returns.",
     "pillars": [
       { "heading": "Aligned", "text": "Leadership invests alongside our clients, striving to demonstrate shared commitment, not just asset management." },
       { "heading": "Diversified", "text": "Real assets across energy, real estate and other alternatives, sourced where we have expertise." },
@@ -29,20 +29,18 @@
   "portfolio": {
     "section_title": "One platform, invested across three groups.",
     "section_lead": "Everything Leggett Capital Partners owns and invests in. Choose a group to see the investments behind it.",
-    "oil_intro": "Our oil &amp; gas group is managed by <a href=\"https://cannonfield.com\">Cannon Field</a>, our in-house oil &amp; gas company. Since its inception in 2017, Cannon Field has closed over 250 transactions across multiple mineral and royalty funds and non-operated assets concentrated in Oklahoma, Texas, New Mexico and Wyoming.",
+    "oil_intro": "Our oil &amp; gas group is managed by <a href=\"https://cannonfield.com\">Cannon Field</a>, our in-house oil &amp; gas company. Cannon Field manages over 100,000 net royalty acres across its affiliated entities.",
     "oil_stats": [
-      { "num": "44,000+", "label": "Net royalty acres" },
-      { "num": "8,900+", "label": "Producing wells" },
-      { "num": "250+", "label": "Transactions closed" }
+      { "num": "100,000+", "label": "Net royalty acres" }
     ],
     "oil_funds": [
       { "desc": "The inaugural fund, focused on minerals and royalties across Oklahoma, Texas and New Mexico.", "status": "Exited - 2024" },
       { "desc": "Focused on minerals across Oklahoma, Texas and New Mexico.", "status": "Active" },
       { "desc": "Focused on minerals across Oklahoma, Texas, New Mexico and Wyoming.", "status": "Active; Investing" }
     ],
-    "re_intro": "Our Real Estate Group includes traditional real estate assets operated by our two in-house portfolio companies, NewFound Partners and Starlight Campgrounds. From commercial real estate opportunities to Recreational RV assets, the portfolio consists of multiple assets across the US.",
-    "re_labels": ["Commercial Real Estate", "Recreational RV Parks"],
-    "opp_intro": "Led by Founder &amp; Managing Partner <a class=\"pf__lead\" href=\"#team\">John Leggett</a>, our Opportunities Group targets high-quality, cash-flowing assets with strong fundamentals and growth potential.",
+    "re_intro": "Our Real Estate Group includes assets across the US operated by our two in-house portfolio companies, NewFound Partners and Starlight Campgrounds.",
+    "re_labels": ["Commercial Real Estate", "RV Parks and Campgrounds"],
+    "opp_intro": "Led by Founder &amp; Managing Partner <a class=\"pf__lead\" href=\"#team\">John Leggett</a>, our Opportunities Group targets high-quality assets with strong fundamentals and growth potential.",
     "opp_labels": [
       "Sparkling Water",
       "Upstream Oil &amp; Gas &middot; San Juan Basin (Exited - 2026)",
@@ -57,14 +55,14 @@
   },
   "story": {
     "title": "From one venture to a diversified platform.",
-    "lead": "What began as one entrepreneur's move into real estate has grown into a diversified private equity firm with a family of operating companies and a portfolio of managed investments across real estate, oil &amp; gas and other alternatives, all led by experienced industry professionals.",
+    "lead": "What began as one entrepreneur's move into real estate has grown into a diversified private equity firm with a family of operating companies and a portfolio of managed investments across oil &amp; gas, real estate and other alternatives, all led by experienced industry professionals.",
     "milestones": [
       { "year": "2004", "name": "On Point Custom Homes", "category": "Residential Real Estate", "url": "https://onpointcustomhomes.com" },
       { "year": "2008", "name": "Frontier Title", "category": "Acquired &middot; Title", "url": "https://frontiertitletexas.com" },
       { "year": "2016", "name": "Leggett Capital Partners", "category": "Investment Platform Founded", "url": "https://leggettcapitalpartners.com" },
       { "year": "2017", "name": "Cannon Field", "category": "Oil &amp; Gas", "url": "https://cannonfield.com" },
       { "year": "2021", "name": "NewFound Partners", "category": "Commercial Real Estate", "url": "https://newfoundpartners.com" },
-      { "year": "2022", "name": "Starlight Campgrounds", "category": "Recreational RV", "url": "https://starlightcampgrounds.com" }
+      { "year": "2022", "name": "Starlight Campgrounds", "category": "RV Parks and Campgrounds", "url": "https://starlightcampgrounds.com" }
     ]
   },
   "contact": {
@@ -72,7 +70,7 @@
     "email": "investors@leggettcp.com"
   },
   "footer": {
-    "tagline": "A Houston based Private Equity Firm providing access to opportunistic investments in Real Estate, Oil & Gas and other alternative asset classes."
+    "tagline": "A Houston-based Private Equity Firm providing access to opportunistic investments in Oil & Gas, Real Estate and other alternative asset classes."
   },
   "team": {
     "john": {
@@ -145,7 +143,7 @@
       "modalTitle": "Vice President",
       "photo": "assets/team/jake.jpg",
       "bio": [
-        "Jake Pincus is a Vice President at Leggett Capital Partners, where he focuses on sourcing and executing investments across the firm's real estate, oil & gas, and opportunities portfolios.",
+        "Jake Pincus is a Vice President at Leggett Capital Partners, where he focuses on sourcing and executing investments across the firm's oil & gas, real estate, and opportunities portfolios.",
         "Prior to joining Leggett Capital Partners, Jake was an Associate at Pelican Energy Partners, where he focused on investments in nuclear and oilfield services companies. Previously, he was an Investment Banking Associate at Mizuho, focusing on power, utilities, and infrastructure, and worked in KPMG's transaction advisory and audit practices.",
         "Jake holds a Master of Accountancy with a minor in Finance from the University of Mississippi and is a Certified Public Accountant."
       ]
@@ -165,7 +163,7 @@
       "modalTitle": "Analyst",
       "photo": "assets/team/jackson.jpg?v=20261006a",
       "bio": [
-        "Jackson Darr is an Analyst at Leggett Capital Partners, where he supports the firm's investment and operations teams across its real estate, oil & gas and opportunities portfolios. He assists with financial analysis, research and reporting, and builds internal tools that help the team operate more efficiently. Jackson also works across the firm to implement AI and technology solutions that enhance investment due diligence, reporting and portfolio operations.",
+        "Jackson Darr is an Analyst at Leggett Capital Partners, where he supports the firm's investment and operations teams across its oil & gas, real estate and opportunities portfolios. He assists with financial analysis, research and reporting, and builds internal tools that help the team operate more efficiently. Jackson also works across the firm to implement AI and technology solutions that enhance investment due diligence, reporting and portfolio operations.",
         "Jackson is an undergraduate at Rice University, where he is pursuing a degree in Business with a concentration in Finance and a minor in Entrepreneurship."
       ]
     }

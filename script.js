@@ -146,7 +146,7 @@
       photo: 'assets/team/jake.jpg',
       colleges: [{ name: 'University of Mississippi', logo: 'assets/colleges/mississippi.png' }],
       bio: [
-        `Jake Pincus is a Vice President at Leggett Capital Partners, where he focuses on sourcing and executing investments across the firm's real estate, oil & gas, and opportunities portfolios.`,
+        `Jake Pincus is a Vice President at Leggett Capital Partners, where he focuses on sourcing and executing investments across the firm's oil & gas, real estate, and opportunities portfolios.`,
         `Prior to joining Leggett Capital Partners, Jake was an Associate at Pelican Energy Partners, where he focused on investments in nuclear and oilfield services companies. Previously, he was an Investment Banking Associate at Mizuho, focusing on power, utilities, and infrastructure, and worked in KPMG's transaction advisory and audit practices.`,
         `Jake holds a Master of Accountancy with a minor in Finance from the University of Mississippi and is a Certified Public Accountant.`,
       ],
@@ -166,7 +166,7 @@
       photo: 'assets/team/jackson.jpg?v=20261006a',
       colleges: [{ name: 'Rice University', logo: 'assets/colleges/rice.png' }],
       bio: [
-        `Jackson Darr is an Analyst at Leggett Capital Partners, where he supports the firm's investment and operations teams across its real estate, oil & gas and opportunities portfolios. He assists with financial analysis, research and reporting, and builds internal tools that help the team operate more efficiently. Jackson also works across the firm to implement AI and technology solutions that enhance investment due diligence, reporting and portfolio operations.`,
+        `Jackson Darr is an Analyst at Leggett Capital Partners, where he supports the firm's investment and operations teams across its oil & gas, real estate and opportunities portfolios. He assists with financial analysis, research and reporting, and builds internal tools that help the team operate more efficiently. Jackson also works across the firm to implement AI and technology solutions that enhance investment due diligence, reporting and portfolio operations.`,
         `Jackson is an undergraduate at Rice University, where he is pursuing a degree in Business with a concentration in Finance and a minor in Entrepreneurship.`,
       ],
     },
