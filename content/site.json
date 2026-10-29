@@ -33,8 +33,8 @@
     "oil_stats": [],
     "oil_funds": [
       { "desc": "The inaugural fund, focused on minerals and royalties across Oklahoma, Texas and New Mexico.", "status": "Exited - 2024" },
-      { "desc": "Focused on minerals across Oklahoma, Texas and New Mexico.", "status": "Active" },
-      { "desc": "Focused on minerals across Oklahoma, Texas, New Mexico and Wyoming.", "status": "Active; Investing" }
+      { "desc": "Focused on minerals and royalties across Oklahoma, Texas and New Mexico.", "status": "Active" },
+      { "desc": "Focused on minerals and royalties across Texas, New Mexico, Oklahoma and Wyoming.", "status": "Active; Investing" }
     ],
     "re_intro": "Our Real Estate Group includes assets across the US operated by our two in-house portfolio companies, NewFound Partners and Starlight Campgrounds.",
     "re_labels": ["Commercial Real Estate", "RV Parks and Campgrounds"],
