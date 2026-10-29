@@ -135,11 +135,10 @@ a{color:inherit;text-decoration:none}
 }
 .hero__overlay{
   position:absolute;inset:0;
-  /* Matches deck slide 1: #3F6291 tint over the Houston skyline.
-     Kept a slight bottom/left darkening in the same blue for text legibility. */
+  /* Deep blue tint (≈ midpoint of the deck blue #3F6291 and the navy #13294B)
+     so the hero sits in the same family as the navy header/bands — less contrast. */
   background:
-    linear-gradient(180deg,rgba(63,98,145,.62) 0%,rgba(63,98,145,.58) 45%,rgba(63,98,145,.82) 100%),
-    linear-gradient(90deg,rgba(63,98,145,.55) 0%,rgba(63,98,145,.20) 70%);
+    linear-gradient(180deg,rgba(41,70,110,.84) 0%,rgba(41,70,110,.78) 50%,rgba(26,47,82,.92) 100%);
 }
 .hero__content{position:relative;z-index:2;max-width:var(--maxw);margin:0 auto;padding:0 28px;width:100%}
 .hero__title{
