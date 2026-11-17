@@ -21,10 +21,10 @@
 
 <style>
   /* ===== Intern page ===== */
-  .ihero{position:relative;color:#fff;padding:172px 0 96px;overflow:hidden;background:var(--navy)}
+  .ihero{position:relative;color:#fff;padding:150px 0 80px;overflow:hidden;background:var(--navy);min-height:100vh;min-height:100svh;display:flex;align-items:center}
   .ihero__bg{position:absolute;inset:0;background:url('../assets/hero-skyline.jpg') center/cover no-repeat;transform:scale(1.03)}
   .ihero__overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(33,61,104,.80) 0%,rgba(19,41,75,.88) 58%,rgba(14,31,58,.96) 100%)}
-  .ihero__inner{position:relative;max-width:860px}
+  .ihero__inner{position:relative;max-width:860px;width:100%}
   .ihero .eyebrow{color:var(--copper)}
   .tag{display:inline-block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#08121f;background:var(--copper);padding:7px 15px;border-radius:2px;margin-bottom:24px}
   .ihero h1{font-family:'Libre Baskerville',Georgia,serif;font-size:clamp(2.4rem,5.6vw,3.8rem);line-height:1.07;margin:0 0 .42em}
@@ -52,12 +52,6 @@
   .lead-copy p+p{margin-top:1.1em}
 
   /* AI band */
-  .ai-band{background:var(--navy-900);color:#fff;padding:88px 0;position:relative;overflow:hidden}
-  .ai-band::after{content:"AI";position:absolute;right:3%;top:50%;transform:translateY(-50%);font-family:'Libre Baskerville',Georgia,serif;font-size:clamp(10rem,24vw,22rem);line-height:.8;color:rgba(112,169,161,.09);font-weight:700;pointer-events:none}
-  .ai-band .wrap{position:relative;z-index:1}
-  .ai-band .eyebrow{color:var(--copper)}
-  .ai-band h2{font-family:'Libre Baskerville',Georgia,serif;font-size:clamp(1.7rem,3.6vw,2.5rem);line-height:1.18;margin:.3em 0 0;max-width:780px}
-  .ai-band p{color:#c3cede;max-width:700px;margin:22px 0 0;line-height:1.7;font-size:1.08rem}
 
   /* tracks */
   .tracks{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:52px}
@@ -167,14 +161,6 @@
     </div>
   </section>
 
-  <!-- ============================ AI BAND ============================ -->
-  <section class="ai-band">
-    <div class="wrap">
-      <p class="eyebrow">An AI-forward internship</p>
-      <h2>We want students who already use AI every day, and want to put it to work on live investment and operating problems.</h2>
-      <p>You will use AI daily for research, analysis, writing and data work, find the workflows it can speed up, build and test the tool, and show the team how to use it. Tell us what you have already built, automated or shipped with AI.</p>
-    </div>
-  </section>
 
   <!-- ============================ TRACKS ============================ -->
   <section class="section section--paper" id="tracks">
