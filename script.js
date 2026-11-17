@@ -163,7 +163,7 @@
     },
     lindsey: {
       name: 'Lindsey Richardson', title: 'Investor Relations & Operations Analyst', company: 'Leggett Capital Partners',
-      photo: 'assets/team/lindsey.jpg?v=20261116',
+      photo: 'assets/team/lindsey.jpg?v=20261116b',
       colleges: [{ name: 'Texas Tech University', logo: 'assets/colleges/texas-tech.png' }],
       bio: [
         `Lindsey is an Investor Relations & Operations Analyst at Leggett Capital Partners, supporting both the firm's investors and its day-to-day operations. She assists with investor relations, fundraising efforts and investor reporting, helping ensure our investors receive timely, high-quality communication and support. On the operations side, Lindsey helps strengthen the processes that keep the firm running and serves as a bridge between our investment, accounting and investor relations teams so their work fits together seamlessly.`,
