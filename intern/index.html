@@ -20,61 +20,85 @@
 <link rel="stylesheet" href="../styles.css?v=20261113a" />
 
 <style>
-  /* ===== Intern page specifics ===== */
-  .ihero{position:relative;background:var(--navy);color:#fff;padding:150px 0 72px}
-  .ihero__inner{max-width:820px}
+  /* ===== Intern page ===== */
+  .ihero{position:relative;color:#fff;padding:172px 0 96px;overflow:hidden;background:var(--navy)}
+  .ihero__bg{position:absolute;inset:0;background:url('../assets/hero-skyline.jpg') center/cover no-repeat;transform:scale(1.03)}
+  .ihero__overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(33,61,104,.80) 0%,rgba(19,41,75,.88) 58%,rgba(14,31,58,.96) 100%)}
+  .ihero__inner{position:relative;max-width:860px}
   .ihero .eyebrow{color:var(--copper)}
-  .ihero h1{font-family:'Libre Baskerville',Georgia,serif;font-size:clamp(2.1rem,5vw,3.3rem);line-height:1.1;margin:.3em 0 .5em}
-  .ihero p{font-size:1.15rem;line-height:1.6;color:#d7deea;max-width:680px}
-  .ihero__actions{margin-top:34px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+  .tag{display:inline-block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#08121f;background:var(--copper);padding:7px 15px;border-radius:2px;margin-bottom:24px}
+  .ihero h1{font-family:'Libre Baskerville',Georgia,serif;font-size:clamp(2.4rem,5.6vw,3.8rem);line-height:1.07;margin:0 0 .42em}
+  .ihero p{font-size:1.18rem;line-height:1.65;color:#dbe2ee;max-width:710px}
+  .ihero__actions{margin-top:38px;display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+  .ihero__meta{margin-top:32px;display:flex;flex-wrap:wrap;gap:11px 28px;color:#aebccf;font-size:.9rem}
+  .ihero__meta span{display:inline-flex;align-items:center;gap:9px}
+  .ihero__meta span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--copper)}
 
-  .btn-apply{display:inline-block;background:var(--copper);color:#08121f;font-weight:600;letter-spacing:.02em;
-    padding:15px 30px;border-radius:2px;text-decoration:none;transition:transform .2s var(--ease),filter .2s var(--ease)}
-  .btn-apply:hover{filter:brightness(1.08);transform:translateY(-2px)}
-  .btn-ghost{display:inline-block;color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:2px}
+  .btn-apply{display:inline-block;background:var(--copper);color:#08121f;font-weight:700;letter-spacing:.02em;
+    padding:16px 32px;border-radius:2px;text-decoration:none;box-shadow:0 14px 30px -14px rgba(112,169,161,.7);
+    transition:transform .2s var(--ease),filter .2s var(--ease)}
+  .btn-apply:hover{filter:brightness(1.07);transform:translateY(-2px)}
+  .btn-ghost{display:inline-block;color:#fff;text-decoration:none;font-weight:500;border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:3px;transition:border-color .2s var(--ease)}
   .btn-ghost:hover{border-color:var(--copper)}
 
-  .glance{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line,#e4e2dc);
-    border:1px solid var(--line,#e4e2dc);margin-top:54px}
-  .glance__item{background:var(--paper,#fff);padding:26px 22px}
-  .glance__item span{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--copper);font-weight:600;margin-bottom:10px}
-  .glance__item strong{font-family:'Libre Baskerville',Georgia,serif;font-weight:400;color:var(--navy);font-size:1.12rem;line-height:1.35;display:block}
+  .glance{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);
+    border:1px solid var(--line);margin-top:38px;border-radius:6px;overflow:hidden;box-shadow:0 24px 50px -36px rgba(19,41,75,.45)}
+  .glance__item{background:#fff;padding:28px 24px;transition:background .25s var(--ease)}
+  .glance__item:hover{background:var(--paper)}
+  .glance__item span{display:block;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--copper);font-weight:700;margin-bottom:11px}
+  .glance__item strong{font-family:'Libre Baskerville',Georgia,serif;font-weight:400;color:var(--navy);font-size:1.1rem;line-height:1.35;display:block}
 
-  .lead-copy{max-width:760px;font-size:1.1rem;line-height:1.75;color:var(--muted)}
+  .lead-copy{max-width:780px;font-size:1.14rem;line-height:1.75;color:var(--muted)}
   .lead-copy p+p{margin-top:1.1em}
 
-  .tracks{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:50px}
-  .track-card{background:var(--paper,#fff);border:1px solid var(--line,#e4e2dc);border-top:3px solid var(--navy);padding:30px 28px;display:flex;flex-direction:column}
-  .track-card h3{font-family:'Libre Baskerville',Georgia,serif;color:var(--navy);font-size:1.3rem;margin:0}
-  .track-card .track__co{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--copper);font-weight:600;margin:6px 0 14px}
-  .track-card>p{color:var(--muted);line-height:1.6;margin:0 0 16px}
-  .track-card ul{list-style:none;margin:0 0 18px;padding:0}
-  .track-card li{position:relative;padding-left:20px;color:var(--muted);line-height:1.5;margin-bottom:9px;font-size:.96rem}
-  .track-card li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;background:var(--copper);border-radius:50%}
-  .track-card .track__field{margin-top:auto;font-size:.88rem;color:var(--navy);border-top:1px solid var(--line,#e4e2dc);padding-top:14px}
-  .track-card .track__field b{font-weight:600}
+  /* AI band */
+  .ai-band{background:var(--navy-900);color:#fff;padding:88px 0;position:relative;overflow:hidden}
+  .ai-band::after{content:"AI";position:absolute;right:3%;top:50%;transform:translateY(-50%);font-family:'Libre Baskerville',Georgia,serif;font-size:clamp(10rem,24vw,22rem);line-height:.8;color:rgba(112,169,161,.09);font-weight:700;pointer-events:none}
+  .ai-band .wrap{position:relative;z-index:1}
+  .ai-band .eyebrow{color:var(--copper)}
+  .ai-band h2{font-family:'Libre Baskerville',Georgia,serif;font-size:clamp(1.7rem,3.6vw,2.5rem);line-height:1.18;margin:.3em 0 0;max-width:780px}
+  .ai-band p{color:#c3cede;max-width:700px;margin:22px 0 0;line-height:1.7;font-size:1.08rem}
 
-  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:40px}
+  /* tracks */
+  .tracks{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:52px}
+  .track-card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:34px 30px 30px;display:flex;flex-direction:column;position:relative;
+    transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s var(--ease)}
+  .track-card:hover{transform:translateY(-5px);box-shadow:0 26px 52px -28px rgba(19,41,75,.42);border-color:var(--copper)}
+  .track__num{font-family:'Libre Baskerville',Georgia,serif;font-size:1.05rem;color:var(--copper);font-weight:700;letter-spacing:.05em}
+  .track-card h3{font-family:'Libre Baskerville',Georgia,serif;color:var(--navy);font-size:1.32rem;margin:10px 0 0}
+  .track-card .track__co{font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;color:var(--copper);font-weight:700;margin:7px 0 15px}
+  .track-card>p{color:var(--muted);line-height:1.6;margin:0 0 18px}
+  .track-card ul{list-style:none;margin:0 0 20px;padding:0}
+  .track-card li{position:relative;padding-left:22px;color:var(--navy);line-height:1.5;margin-bottom:11px;font-size:.95rem}
+  .track-card li::before{content:"";position:absolute;left:0;top:.42em;width:8px;height:8px;background:var(--copper);border-radius:2px;transform:rotate(45deg)}
+  .track-card .track__field{margin-top:auto;font-size:.86rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+  .track-card .track__field b{font-weight:700;color:var(--navy)}
+
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:40px}
   .chk{list-style:none;margin:0;padding:0}
-  .chk li{position:relative;padding-left:26px;color:var(--muted);line-height:1.55;margin-bottom:13px}
-  .chk li::before{content:"";position:absolute;left:0;top:.35em;width:13px;height:13px;border:2px solid var(--copper);border-radius:3px}
+  .chk li{position:relative;padding-left:30px;color:var(--navy);line-height:1.55;margin-bottom:15px}
+  .chk li::before{content:"";position:absolute;left:0;top:.18em;width:16px;height:16px;border:2px solid var(--copper);border-radius:4px}
+  .chk li::after{content:"";position:absolute;left:5px;top:.34em;width:4px;height:8px;border:solid var(--copper);border-width:0 2px 2px 0;transform:rotate(45deg)}
 
-  .flow{margin-top:40px;border-left:2px solid var(--line,#e4e2dc);padding-left:0}
-  .flow__row{position:relative;padding:0 0 26px 30px;border-left:2px solid var(--line,#e4e2dc);margin-left:0}
-  .flow__row::before{content:"";position:absolute;left:-7px;top:3px;width:12px;height:12px;background:var(--copper);border-radius:50%}
-  .flow__row:last-child{padding-bottom:0}
-  .flow__when{font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--copper);font-weight:600}
-  .flow__what{color:var(--navy);font-family:'Libre Baskerville',Georgia,serif;margin:4px 0 0;line-height:1.4}
+  /* numbered timeline */
+  .flow{margin-top:30px;counter-reset:step;position:relative}
+  .flow__row{position:relative;padding:0 0 28px 58px;min-height:40px}
+  .flow__row:not(:last-child)::after{content:"";position:absolute;left:19px;top:42px;bottom:0;width:2px;background:var(--line)}
+  .flow__row::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;font-family:'Libre Baskerville',Georgia,serif;font-size:1.05rem;display:flex;align-items:center;justify-content:center}
+  .flow__when{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--copper);font-weight:700;padding-top:3px}
+  .flow__what{color:var(--navy);margin:4px 0 0;line-height:1.5}
 
-  .apply-band{background:var(--navy);color:#fff;text-align:center;padding:70px 0}
-  .apply-band h2{font-family:'Libre Baskerville',Georgia,serif;font-size:clamp(1.7rem,4vw,2.4rem);margin:0 0 14px}
-  .apply-band p{color:#d7deea;max-width:560px;margin:0 auto 28px;line-height:1.6}
-  .apply-band .deadline{margin-top:20px;font-size:.9rem;color:#9fb0c7}
+  .apply-band{background:var(--navy);color:#fff;text-align:center;padding:96px 0;position:relative;overflow:hidden}
+  .apply-band__bg{position:absolute;inset:0;background:url('../assets/hero-skyline.jpg') center/cover no-repeat;opacity:.13}
+  .apply-band .wrap{position:relative;z-index:1}
+  .apply-band h2{font-family:'Libre Baskerville',Georgia,serif;font-size:clamp(1.9rem,4vw,2.7rem);margin:0 0 16px}
+  .apply-band p{color:#dbe2ee;max-width:620px;margin:0 auto 30px;line-height:1.65}
+  .apply-band .deadline{margin-top:22px;font-size:.88rem;color:#9fb0c7}
 
   @media(max-width:900px){
     .glance{grid-template-columns:repeat(2,1fr)}
     .tracks{grid-template-columns:1fr}
-    .two-col{grid-template-columns:1fr;gap:28px}
+    .two-col{grid-template-columns:1fr;gap:40px}
   }
   @media(max-width:560px){ .glance{grid-template-columns:1fr} }
 </style>
@@ -105,13 +129,22 @@
 
   <!-- ============================ HERO ============================ -->
   <section class="ihero" id="top">
+    <div class="ihero__bg"></div>
+    <div class="ihero__overlay"></div>
     <div class="wrap ihero__inner">
+      <span class="tag">Summer 2027</span>
       <p class="eyebrow">Careers</p>
       <h1>Summer Internship Program</h1>
       <p>Each summer, Leggett Capital Partners and its portfolio companies hire a small class of interns in our Houston office. You will join our private equity team and operating companies, own a real project from the first week, and apply AI to live investment and operating work across real estate, oil &amp; gas and strategic investments.</p>
       <div class="ihero__actions">
-        <a class="btn-apply" href="https://leggettventures.com/intern" target="_blank" rel="noopener">Apply now</a>
+        <a class="btn-apply" href="https://forms.clickup.com/9014081914/f/8cmfybu-54574/VZ8JR9ZS53LAACEN5C" target="_blank" rel="noopener">Apply now</a>
         <a class="btn-ghost" href="#tracks">See the roles</a>
+      </div>
+      <div class="ihero__meta">
+        <span>Houston, Texas</span>
+        <span>June to July 2027</span>
+        <span>Paid, $22 per hour</span>
+        <span>AI-forward</span>
       </div>
     </div>
   </section>
@@ -131,7 +164,15 @@
       <div class="lead-copy" style="margin-top:46px">
         <p>This is a paid, onsite summer program of roughly eight weeks, Monday through Friday (about 30 hours per week), with flexibility for scheduled time off. We hire a small class and match each intern to one of three tracks based on their background and interests. Every intern owns a real project from week one, presents it at the end of the summer, and uses AI tools daily throughout.</p>
       </div>
-      <p style="margin-top:28px;padding:20px 24px;border-left:3px solid var(--copper);background:var(--paper);color:var(--navy);font-weight:500;line-height:1.6;max-width:760px">This is an AI-forward internship. We look for students who already use AI every day and want to apply it to live investment and operating work, building and testing tools the whole team can use.</p>
+    </div>
+  </section>
+
+  <!-- ============================ AI BAND ============================ -->
+  <section class="ai-band">
+    <div class="wrap">
+      <p class="eyebrow">An AI-forward internship</p>
+      <h2>We want students who already use AI every day, and want to put it to work on live investment and operating problems.</h2>
+      <p>You will use AI daily for research, analysis, writing and data work, find the workflows it can speed up, build and test the tool, and show the team how to use it. Tell us what you have already built, automated or shipped with AI.</p>
     </div>
   </section>
 
@@ -143,6 +184,7 @@
       <div class="tracks">
 
         <article class="track-card">
+          <span class="track__num">01</span>
           <h3>Investments</h3>
           <p class="track__co">Leggett Capital Partners</p>
           <p>Join our private equity team and work across real estate, energy and strategic investments, owning a project from the first week.</p>
@@ -157,9 +199,10 @@
         </article>
 
         <article class="track-card">
+          <span class="track__num">02</span>
           <h3>Oil &amp; Gas / Minerals</h3>
           <p class="track__co">Cannon Field</p>
-          <p>Join the Cannon Field minerals team on live acquisitions. Cannon Field buys and sells mineral rights and non-operated interests across the lower 48, holding over 105,000 acres and 7,000 wells in 243 counties across 20 states.</p>
+          <p>Join the Cannon Field minerals team on live acquisitions, buying and selling mineral rights and non-operated interests across the lower 48.</p>
           <ul>
             <li>Support mineral and royalty acquisitions: sourcing, research and valuation</li>
             <li>Work buyer and seller outreach and move deals through the pipeline</li>
@@ -171,6 +214,7 @@
         </article>
 
         <article class="track-card">
+          <span class="track__num">03</span>
           <h3>Operations + Marketing</h3>
           <p class="track__co">On Point Custom Homes</p>
           <p>Join the operations and marketing team for hands-on work in luxury custom home building and residential real estate, in the office and in the field.</p>
@@ -213,7 +257,7 @@
             <div class="flow__row"><p class="flow__when">Your project</p><p class="flow__what">A real project from week one, owned with a manager, that you present at the end of the summer.</p></div>
             <div class="flow__row"><p class="flow__when">Team case study</p><p class="flow__what">The intern class tackles one firm problem together and presents it jointly to leadership.</p></div>
             <div class="flow__row"><p class="flow__when">First week</p><p class="flow__what">A structured start on how the firm works: our investments, operating companies and the people behind them.</p></div>
-            <div class="flow__row"><p class="flow__when">Lunch and learns</p><p class="flow__what">Weekly sessions with firm leaders, and each intern leads one of their own.</p></div>
+            <div class="flow__row"><p class="flow__when">Lunch and learns</p><p class="flow__what">Weekly sessions with firm leaders.</p></div>
             <div class="flow__row"><p class="flow__when">Along the way</p><p class="flow__what">Weekly check-ins, site visits including On Point Custom Homes builds, and team events.</p></div>
           </div>
         </div>
@@ -234,10 +278,11 @@
 
   <!-- ============================ APPLY ============================ -->
   <section class="apply-band" id="apply">
+    <div class="apply-band__bg"></div>
     <div class="wrap">
       <h2>Ready to apply?</h2>
       <p>Complete the application and upload your resume. Applications are reviewed on a rolling basis, so apply early. Selected candidates complete an online assessment and a recorded video interview, followed by a final interview in person in Houston or virtually.</p>
-      <a class="btn-apply" href="https://leggettventures.com/intern" target="_blank" rel="noopener">Start your application</a>
+      <a class="btn-apply" href="https://forms.clickup.com/9014081914/f/8cmfybu-54574/VZ8JR9ZS53LAACEN5C" target="_blank" rel="noopener">Start your application</a>
       <p class="deadline">Onsite in Houston. Housing and relocation are not provided.</p>
     </div>
   </section>
